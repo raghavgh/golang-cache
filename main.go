@@ -98,7 +98,7 @@ func (cache *Cache) Display() {
 func main() {
 	fmt.Println("STARTING CACHE .....")
 	cache := NewCache()
-	for _, word := range []string{"parrot", "avocado", "dragonfruit", "tree", "potato", "tomato", "tree"} {
+	for _, word := range []string{"parrot", "avocado", "dragon", "tree", "potato", "tomato", "tree"} {
 		cache.Check(word)
 		cache.Display()
 	}
