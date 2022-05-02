@@ -72,7 +72,6 @@ func (cache *Cache) Add(node *Node) {
 	node.Left = cache.queue.Head
 
 	cache.queue.Size++
-
 	if cache.queue.Size > cache.queue.Capacity {
 		cache.Remove(cache.queue.Tail.Left)
 	}
